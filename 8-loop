@@ -1,0 +1,41 @@
+
+[]
+console.log('Trabalhando com condicionais');
+
+
+const listaDeDestino = new Array ('praiGrande', 'santos','saoVicente','cubatao');
+
+
+const idadeComprador = 33;
+const estaAcompanhada = false;
+let  passagemComprada = false;
+const destino = 'saoVicente';
+
+
+console.log(listaDeDestino);
+
+const podeComprar = idadeComprador >= 18 || estaAcompanhada == true;
+
+    console.log('Boa viagem');
+    
+
+console.log('Embarque: \n\n');
+
+if(idadeComprador >= 18 && passagemComprada ){
+    console.log('Boa Viagem');
+}else{
+    console.log('Voce nao pode embarcar');
+}
+console.log('Embarque: \n\n');
+
+let contador = 0;
+
+while (contador < 4){
+    if(listaDeDestino[contador]== destino){
+        console.log('Destino existe');
+        break;
+    }else{
+        console.log('destino inesistente');
+    }
+    contador ++;
+}
