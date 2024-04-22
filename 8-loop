@@ -3,12 +3,12 @@
 console.log('Trabalhando com condicionais');
 
 
-const listaDeDestino = new Array ('praiGrande', 'santos','saoVicente','cubatao');
+const listaDeDestinos = new Array ('praiGrande', 'santos','saoVicente','cubatao');
 
 
-const idadeComprador = 33;
+const idadeComprador = 12;
 const estaAcompanhada = false;
-let  passagemComprada = false;
+let  passagemComprada = true;
 const destino = 'saoVicente';
 
 
@@ -30,12 +30,26 @@ console.log('Embarque: \n\n');
 
 let contador = 0;
 
+let destinoExiste = false;
 while (contador < 4){
-    if(listaDeDestino[contador]== destino){
+    if(listaDeDestinos[contador]== destino){
         console.log('Destino existe');
+        destinoExiste = true;
         break;
-    }else{
-        console.log('destino inesistente');
     }
     contador ++;
+}
+
+console.log('Destino existe', destinoExiste);
+
+if(podeComprar && destinoExiste){
+console.log('Boa viagem');
+}else{
+    console.log('Desculpe tivemos um erro');
+}
+
+for(let cont = 0 ; cont <3 ; cont++){
+    if(listaDeDestinos[contador] == destino){
+        destinoExiste = true;
+        }
 }
